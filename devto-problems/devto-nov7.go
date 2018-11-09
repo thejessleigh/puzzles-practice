@@ -2,10 +2,9 @@
 // Source - https://www.codewars.com/kata/array-dot-diff
 package main
 
-import(
+import (
 	"fmt"
 )
-
 
 func Difference(a []int, b []int) (diff []int) {
 	m := make(map[int]bool)
@@ -22,7 +21,7 @@ func Difference(a []int, b []int) (diff []int) {
 	return
 }
 
-func main(){
+func main() {
 	var a = []int{1, 2, 3, 4, 5}
 	var b = []int{2, 3, 5, 7, 11}
 	fmt.Println(Difference(a, b))

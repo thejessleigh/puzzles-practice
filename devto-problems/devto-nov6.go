@@ -6,7 +6,7 @@ import (
 	"fmt"
 )
 
-func Product(nums []int)(x int) {
+func Product(nums []int) (x int) {
 	x = 1
 
 	for _, num := range nums {
@@ -15,8 +15,7 @@ func Product(nums []int)(x int) {
 	return
 }
 
-
-func main(){
+func main() {
 	fmt.Println(Product([]int{1, 2, 3, 4, 5}))
 	fmt.Println(Product([]int{2, 4, 6, 8, 10}))
 }

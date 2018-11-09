@@ -2,11 +2,10 @@
 // Source - https://www.codewars.com/kata/scramblies
 package main
 
-import(
+import (
 	"fmt"
 	"strings"
 )
-
 
 func Scramble(str1 string, str2 string) (result bool) {
 	m := make(map[string]int)
@@ -26,8 +25,8 @@ func Scramble(str1 string, str2 string) (result bool) {
 	return true
 }
 
-func main(){
+func main() {
 	fmt.Println(Scramble("rkqodlw", "world"))
 	fmt.Println(Scramble("cedewaraaaossoqqyt", "codewars"))
-	fmt.Println(Scramble("katas","steak"))
+	fmt.Println(Scramble("katas", "steak"))
 }

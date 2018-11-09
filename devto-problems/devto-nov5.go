@@ -12,11 +12,11 @@ import (
 	"fmt"
 )
 
-func Guess(bStart int, rStart int, bGone int, rGone int)(probability float32) {
+func Guess(bStart int, rStart int, bGone int, rGone int) (probability float32) {
 	var b = bStart - bGone
 	var r = rStart - rGone
 
-	probability = float32(b) / float32(r + b)
+	probability = float32(b) / float32(r+b)
 	return
 }
 
