@@ -1,5 +1,5 @@
 // Calculate the product of all elements in an array
-
+// Source - https://www.codewars.com/kata/product-of-array-items/
 package main
 
 import (

@@ -1,4 +1,5 @@
-//Subtract one list from another and return the result
+// Implement a difference function, which subtracts one list from another and returns the result.
+// Source - https://www.codewars.com/kata/array-dot-diff
 package main
 
 import(
@@ -14,7 +15,7 @@ func Difference(a []int, b []int) (diff []int) {
 	}
 
 	for _, item := range a {
-		if _, presence := m[item]; !presence {
+		if _, ok := m[item]; !ok {
 			diff = append(diff, item)
 		}
 	}
